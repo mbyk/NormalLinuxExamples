@@ -22,7 +22,7 @@ main(int argc, char *argv[])
     long nlines = DEFAULT_N_LINES;
 
     /* (3) */
-    while ((opt = getopt_long(argc, argv, "n:", longopts, NULL)) != -1) {
+    while ((opt = getopt_long(argc, argv, "n", longopts, NULL)) != -1) {
         switch (opt) {
         case 'n':         /* (4) */
             nlines = atol(optarg);
