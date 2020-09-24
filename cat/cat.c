@@ -8,6 +8,7 @@
 static void do_cat(const char* path);
 static void die(const char* s);
 
+/** main */
 int main(int argc, char* argv[]) {
     int i;
     if (argc < 2) {
